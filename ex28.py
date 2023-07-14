@@ -2,10 +2,15 @@
 # para o usuário  tentar descobrir qual foi o número escolhido pelo computador. O programa deverá
 # escrever na tela se o usuário perdeu ou venceu.
 import random
-num = float(input('Escolha um número entre 0 e 5 :'))
-lista = [0,1,2,3,4,5]
-n3 = random.choice(lista)
-print('O número escolhido foi {} e o número sorteado foi {}'.format(num,n3))
+import time
+print('-='*20)
+print('Vou pensar em um número entre 0 e 5')
+print('-=' * 20)
+num = int(input('Em que número eu pensei?'))
+n3 = random.randint(0,5)
+print('Processando ......')
+time.sleep(3) # faz com que o computador aguarde 3 segundos
+print('O número escolhido foi {} e o número escolhido pelo computador foi {}'.format(num,n3))
 if num == n3:
     print('Você ganhou! Parabéns')
 else:
