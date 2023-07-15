@@ -4,4 +4,4 @@ resultado = num % 2 # usamos % que no python é o resto da divisão porque to-do
 if resultado == 0:
     print('O número {} é Par!'.format(num))
 else:
-    print('O número {} é Impar'.format(num))
+    print('O número {} é ìmpar'.format(num))
