@@ -4,7 +4,7 @@
 - 25 até 30: Sobrepeso
 - 30 até 40: Obesidade
 - Acima de 40: Obesidade Mórbida'''
-nome = str(input('Digite o seu nome:')).strip()
+nome = str(input('Digite o seu nome:')).strip().title()
 peso = float(input('Qual é o seu peso:'))
 altura = float(input('Qual é a sua altura:'))
 imc = peso/ (altura * altura)
@@ -16,10 +16,10 @@ elif imc < 25:
     print('Seu IMC é de {:.2f} e você está no peso ideal!'.format(imc))
     print('Parabéns!! Continue se alimentando com coisas boas.')
 elif imc < 30:
-    print('Seu imc é de {:.2f} e você está com sobrepeso! ')
+    print('Seu imc é de {:.2f} e você está com sobrepeso!'.format(imc))
     print('Está na hora de comer menos besteira e fazer exercício.')
 elif imc < 40:
-    print('Seu imc é de {:.2f} e você está Obesidade!')
+    print('Seu imc é de {:.2f} e você está Obesidade!'.format(imc))
     print('Procure fazer mais exercícios e deixe de comer besteira.')
 else:
     print('Você está com Obesidade Morbida!')
