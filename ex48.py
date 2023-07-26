@@ -7,4 +7,3 @@ for c in range(1,501,2):
         soma = soma + c # soma todos os valores
         cont += 1 # += É igual a linha 7 mais simplificado, e aqui ele conta os números somados.
 print('A soma de todos os {} valores solicitador é {}'.format(cont,soma))
-
