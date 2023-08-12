@@ -28,6 +28,7 @@ while True:
         resp = str(input('Quer continuar [S/N]: ')).strip().upper()[0]
     if resp == 'N':
         break
+print('{:-^40}'.format(' FIM DE JOGO '))
 print(f'O total gasto na compra é de R$ {tot:.2f}')
 print(f'O total de produtos com valor acima de R$1000 são: {produtomaior1000}')
 print(f'O nome do produto mais barato é {nprodutomaisbarato} e seu valor é R$ {menor}')
